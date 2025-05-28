@@ -3,11 +3,14 @@ using namespace std;
 
 int main(){
     
-    int x, y;
-    cout << "Enter Values for X and y: ";
-    cin >> x >> y;
-    cout << "X value is " << x << "\n" << "Y value is " << y << endl;
+    string name;
+    int age;
 
+    cout<< "Enter your name: ";
+    getline(cin, name);
+    cout << "Enter your age: ";
+    cin >> age;
 
+    cout << "Hello " << name << "\n"<< "Your age is " << age << "\n";
     return 0;
 }
