@@ -3,38 +3,40 @@
 using namespace std;
 
 int main(){
-    string name;
-    int age;
-    bool student;
+    
+    int num;
     char letter;
-    float pi;
+    bool student;
+    string name; 
 
-    cout << "Enter your name: ";
+    cout << "Enter your full name: ";
     getline(cin, name);
 
-    cout << "Enter your age: ";
-    cin >> age;
+    cout << "Enter your roll no: ";
+    cin >> num;
 
-    cout << "Are you a student or not (1 for Yes, 0 for No): ";
-    cin >> student;
-
-    if(student){
-        cout << "You are a student" << "\n";
-    } else {
-        cout << "You are not a student" << "\n";
-    }
-
-    cout << "Enter your favourite alphabet letter: ";
+    cout << "Enter a favourite alphabet: ";
     cin >> letter;
 
-    cout << "Enter the value of pi: ";
-    cin >> pi;
+    cout << "You are a student?(1 for yes or 0 for no): ";
+    cin >> student;
 
-    if(pi == 3.14f){
-        cout << "You are correct, the value of pi is 3.14" << "\n";
-    } else {
-        cout << "You are wrong, the value of pi is not " << pi << "\n";
+
+    cout << "Your name is " << name << "\n" << "Your roll no is " << num << "\n" << "Favourite alphabet is " << letter << "\n";
+
+    if(student){
+        cout << "You are a student." << endl;
     }
+    else{
+        cout << "You are not student." << endl;
+    }
+
+
+    cout << "Size of num is: " << sizeof(num) << "\n";
+    cout << "Size of letter is: " << sizeof(letter) << "\n";
+    cout << "Size of student is: " << sizeof(student) << "\n";
+    cout << "Size of name is: " << sizeof(name) << "\n";
+
 
     return 0;
 }
