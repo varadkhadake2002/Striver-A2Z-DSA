@@ -1,42 +1,27 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>  // for to_string, stoi, etc.
 using namespace std;
 
-int main(){
-    
-    int num;
-    char letter;
-    bool student;
-    string name; 
+int main() {
+   
+char ch = 'A';
+cout << "ACII value of " << ch << " is " << int(ch) << "\n";
 
-    cout << "Enter your full name: ";
-    getline(cin, name);
+ch = 'z';
+cout << "ACII value of " << ch << " is " << int(ch) << "\n";
 
-    cout << "Enter your roll no: ";
-    cin >> num;
+cout << "------------------" << endl;
 
-    cout << "Enter a favourite alphabet: ";
-    cin >> letter;
+// Prefix vs Postfix
+int a = 5;
+cout << "a = " << a << endl;
 
-    cout << "You are a student?(1 for yes or 0 for no): ";
-    cin >> student;
+cout << "Postfix a++ = " << a++ << endl; // uses then increments
+cout << "After postfix, a = " << a << endl;
 
+a = 5;
+cout << "Prefix ++a = " << ++a << endl; // increments then uses
+cout << "After prefix, a = " << a << endl;
 
-    cout << "Your name is " << name << "\n" << "Your roll no is " << num << "\n" << "Favourite alphabet is " << letter << "\n";
-
-    if(student){
-        cout << "You are a student." << endl;
-    }
-    else{
-        cout << "You are not student." << endl;
-    }
-
-
-    cout << "Size of num is: " << sizeof(num) << "\n";
-    cout << "Size of letter is: " << sizeof(letter) << "\n";
-    cout << "Size of student is: " << sizeof(student) << "\n";
-    cout << "Size of name is: " << sizeof(name) << "\n";
-
-
-    return 0;
+return 0;
 }
