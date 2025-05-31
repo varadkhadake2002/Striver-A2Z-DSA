@@ -8,9 +8,10 @@ This repository contains my solutions and notes as I progress through the [Striv
 
 
 📁 Striver-A2Z-DSA/
-├── 📁 Day1/
-│   └── Day1.cpp
-├── 📁 cheatsheets/
-│   └── type_conversion.txt
-└── README.md
+
+  ├── 📁 Day1/
+    │   └── Day1.cpp  
+  ├── 📁 cheatsheets/
+    │   └── type_conversion.txt
+  └── README.md
 
