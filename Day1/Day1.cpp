@@ -3,25 +3,20 @@
 using namespace std;
 
 int main() {
-   
-char ch = 'A';
-cout << "ACII value of " << ch << " is " << int(ch) << "\n";
 
-ch = 'z';
-cout << "ACII value of " << ch << " is " << int(ch) << "\n";
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
 
-cout << "------------------" << endl;
+    if(num > 0){
+        cout << "It is a positive number." << "\n";
+    }
+    else if (num < 0){
+        cout << "It is a negative number." << "\n";
+    }
+    else{
+        cout << "It is zero." << "\n";
+    }
 
-// Prefix vs Postfix
-int a = 5;
-cout << "a = " << a << endl;
-
-cout << "Postfix a++ = " << a++ << endl; // uses then increments
-cout << "After postfix, a = " << a << endl;
-
-a = 5;
-cout << "Prefix ++a = " << ++a << endl; // increments then uses
-cout << "After prefix, a = " << a << endl;
-
-return 0;
+    return 0;
 }
