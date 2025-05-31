@@ -4,6 +4,19 @@ This repository contains my solutions and notes as I progress through the [Striv
 
 ---
 
+
+✅ Day 1: C++ Basics & Conditionals
+Covered basic syntax, input/output, data types.
+
+Implemented simple logic using if-else and switch-case statements.
+
+Practiced common interview patterns like prefix/postfix increment and vowel checks.
+
+Created ASCII chart cheat sheet for quick reference.
+
+All programs are committed under Day1/ with detailed comments for future revision.
+
+
 ## 📁 Folder Structure
 
 
