@@ -3,24 +3,36 @@ using namespace std;
 
 int main() {
 
+    int a,b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+
     char ch;
-    cout << "Enter an alphabet: ";
+    cout << "Enter and operator (+,-,/,*): ";
     cin >> ch;
 
-    ch = tolower(ch);
 
-    if(ch>= 'a' && ch<= 'z'){
-        if(ch== 'a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
-            cout << "It is an vowel." << '\n';
-        }
-        else{
-            cout << "It is an consonant." << '\n';
-        }
-        
-    }
-    else{
-            cout << "It is an invalid input / Not an alphabet.";
+    switch(ch){
+        case '+':
+            cout << "Result: " << a+b << '\n';
+            break;
+        case '-':
+            cout << "Result: " << a-b << '\n';
+            break;
+        case '/':
+            if(b != 0){
+                cout << "Result: " << a/b << '\n';
+                break;
+            }
+            else{
+                cout << "Division by 0 is not allowed." << '\n';
+            }
+            break;
+        case '*':
+            cout << "Result: " << a*b << '\n';
+            break;
+        default:
+            cout << "Invalid Operator." << '\n';                
     }
 
-    return 0;
 }
