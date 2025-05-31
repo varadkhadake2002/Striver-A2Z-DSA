@@ -1,21 +1,20 @@
-#include <iostream>
-#include <string>  // for to_string, stoi, etc.
+#include<bits/stdc++.h>
 using namespace std;
 
 int main() {
 
-    int num;
-    cout << "Enter a number: ";
-    cin >> num;
+    int a,b,c;
+    cout << "Enter three numbers: ";
+    cin>>a>>b>>c;
 
-    if(num > 0){
-        cout << "It is a positive number." << "\n";
+    if(a>=b && a>=c){
+        cout << a << " is the largest number." << "\n";
     }
-    else if (num < 0){
-        cout << "It is a negative number." << "\n";
+    else if(b>=a && b>=c){
+        cout << b << " is the largest number." << "\n";
     }
     else{
-        cout << "It is zero." << "\n";
+        cout << c << " is the largest number." << "\n";
     }
 
     return 0;
