@@ -11,9 +11,11 @@ This repository contains my solutions and notes as I progress through the [Striv
 
   ├── 📁 Day1/
   
-    │   └── Day1.cpp
+  │   └── Day1.cpp
+  
   ├── 📁 cheatsheets/
   
-    │   └── type_conversion.txt
+  │   └── type_conversion.txt
+  
   └── README.md
 
