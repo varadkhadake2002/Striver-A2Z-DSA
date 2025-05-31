@@ -3,18 +3,23 @@ using namespace std;
 
 int main() {
 
-    int a,b,c;
-    cout << "Enter three numbers: ";
-    cin>>a>>b>>c;
+    char ch;
+    cout << "Enter an alphabet: ";
+    cin >> ch;
 
-    if(a>=b && a>=c){
-        cout << a << " is the largest number." << "\n";
-    }
-    else if(b>=a && b>=c){
-        cout << b << " is the largest number." << "\n";
+    ch = tolower(ch);
+
+    if(ch>= 'a' && ch<= 'z'){
+        if(ch== 'a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
+            cout << "It is an vowel." << '\n';
+        }
+        else{
+            cout << "It is an consonant." << '\n';
+        }
+        
     }
     else{
-        cout << c << " is the largest number." << "\n";
+            cout << "It is an invalid input / Not an alphabet.";
     }
 
     return 0;
