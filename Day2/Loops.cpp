@@ -15,7 +15,7 @@ int main(){
     // ========== While Loop =========
     cout << "While loop(1 to 5): " << endl;
     int j=1;
-    while(j=<5){
+    while(j<=5){
         cout << j << " ";
         j++;
     }
@@ -33,6 +33,6 @@ int main(){
     cout << endl;
     // Output: 1 2 3 4 5
 
-    
+
     return 0;
 }
