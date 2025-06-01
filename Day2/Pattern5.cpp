@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-    //=========== Reverse Number Triangle =========
+    //=========== Inverted Reverse Number Triangle =========
 
     int rows;
     cout << "Enter number of rows: ";
