@@ -24,6 +24,6 @@ int main(){
 
     int n = 8, r = 2;
     cout << nCr(n,r) << endl;
- ////
+ ///////////////////////////
     return 0;
 }
