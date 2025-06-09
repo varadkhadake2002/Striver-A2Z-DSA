@@ -25,18 +25,18 @@ int SumOfDigits(int n){
 }
 
 
-// int fact(int n){
-//     int facto = 1;
+int fact(int n){
+    int facto = 1;
 
-//     for(int i = n; i>=1; i--){
-//         facto = facto*i;
+    for(int i = n; i>=1; i--){
+        facto = facto*i;
 
-//     }
+    }
 
 
 
-//     return facto;
-// }
+    return facto;
+}
 
 // int sumN(int n){
 
