@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// double maxx(double num1, double num2){
-//     if(num1>=num2){
-//         return num1;
-//     }
-//     else{
-//         return num2;
-//     }
-// }
+double maxx(double num1, double num2){
+    if(num1>=num2){
+        return num1;
+    }
+    else{
+        return num2;
+    }
+}
 
 
 int SumOfDigits(int n){
