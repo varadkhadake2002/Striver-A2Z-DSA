@@ -1,20 +1,25 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    
-int rows, cols;
-cout << "Enter number of rows: ";
-cin >> rows;
-cout << "Enter number of columns: ";
-cin >> cols;
 
-for(int i=0; i<rows; i++){
-    for(int j=0; j<cols; j++){
-        cout << "*";
+    //=========== Right-Angled Triangle with Continuous Alphabets (A B C D...) =========
+
+    int rows;
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    char ch = 'A';
+
+    for(int i = 1; i<=rows; i++){
+        
+        for(int j = 1; j<=i; j++){
+            cout << ch << " ";
+            ch++;
+        }
+        
+        cout << endl;
     }
-    cout << endl;
-}
+
     return 0;
 }
-
