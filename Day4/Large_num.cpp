@@ -6,7 +6,7 @@ int main(){
     //------------------------------------------ TAKING INPUT FROM USER ----------------------------------------------------------//
 
     int sze;
-    int smz = INT_MAX;
+    int smz = INT_MIN;
     cout << "Enter the size of array you want to print: ";
     cin >> sze;
 
@@ -19,15 +19,13 @@ int main(){
 
     for(int i = 0; i<sze; i++){
 
-        if(arr[i]<smz){
+        if(arr[i]>smz){
             smz = arr[i];
         }
 
     }
 
-    cout << "The smallest number is" << smz << "\n";
-
-
+    cout << "The largest number is" << smz << "\n";
 
 
 
@@ -36,18 +34,18 @@ int main(){
     int marks [5] = {72, 11 , -2, 20, -12};
 
     int sz = sizeof(marks)/sizeof(int);
-    int sm = INT_MAX;
-
+    
+    int sm = INT_MIN;
     for(int i = 0; i<sz; i++){
 
-        if(marks[i]<sm){
+        if(marks[i]>sm){
             sm = marks[i];
         }
 
     }
     
 
-    cout << "The smallest number is" << sm << "\n";
+    cout << "The largest number is" << sm << "\n";
 
     return 0;
 }
