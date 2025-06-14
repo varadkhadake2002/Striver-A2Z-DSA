@@ -25,7 +25,7 @@ int main(){
 
     }
 
-    cout << "The largest number is" << smz << "\n";
+    cout << "The largest number is " << smz << "\n";
 
 
 
@@ -45,7 +45,7 @@ int main(){
     }
     
 
-    cout << "The largest number is" << sm << "\n";
+    cout << "The largest number is " << sm << "\n";
 
     return 0;
 }
